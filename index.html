@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Codevity</title>
+		<link href="./css/style.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet" />
+	</head>
+	<body class="bg-[#0D1117] font-[Parkinsans]">
+    <div id="reqName" class="fixed hidden w-full min-h-screen items-center justify-center backdrop-blur-sm z-60">
+      <div class="flex flex-col gap-4 bg-[#0D1117] text-[#E5E0FF] p-6 rounded-xl text-center">
+        <p class="font-bold text-xl">Selamat Datang!</p>
+        <p class="font-semibold *:text-md">Silahkan Masukkan Nama Anda..</p>
+        <input id="username" class="bg-[#161B22] text-[#E5E0FF] font-semibold p-3 mt-3 rounded-full text-center outline-2 outline-[#7286D3] focus:scale-105 transition-all duration-300" type="text" placeholder="Nama Anda.." onchange="checkNamaewa()" required/>
+        <button class="bg-[#161B22] text-[#E5E0FF] py-3 rounded-full mx-3 font-bold outline-[#8B94B1] outline-1 hover:bg-[#A5B4FC] hover:text-[#161B22] active:scale-90 transition-discrete duration-300 cursor-pointer" onclick="setNamaewa()">Masuk</button>
+      </div>
+    </div>
+    
+		<div id="navbar" class="fixed items-center w-full flex justify-between py-3 
+    px-6 bg-[#0D1117]/50 text-[#E5E0FF] backdrop-blur-sm rounded-b-xl z-50">
+      <!-- <img class="rounded-full" width="36px" height="36px" src="/assets/icon.jpeg" alt="icon" /> -->
+			<p class="font-bold text-xs md:text-xl">Codevity</p>
+      <div class="flex gap-3">
+        <a href="#beranda" class="font-semibold text-xs md:text-xl hover:text-[#8B94B1]/50 rounded-md transition-all duration-200">Beranda</a>
+				<a href="#tentang" class="font-semibold text-xs md:text-xl hover:text-[#8B94B1]/50 rounded-md transition-colors duration-200">Tentang</a>
+				<a href="#portofolio" class="font-semibold text-xs md:text-xl hover:text-[#8B94B1]/50 rounded-md transition-colors duration-200">Portofolio</a>
+				<a href="#kontak" class="font-semibold text-xs md:text-xl hover:text-[#8B94B1]/50 rounded-md transition-colors duration-200">Kontak</a>
+			</div>
+		</div>
+		<section id="beranda" class="flex items-center justify-center">
+      <span class="absolute bg-black/50 backdrop-blur-xs w-full min-h-screen z-20"></span>
+      <img class="z-10 object-center object-cover h-screen w-full" src="/assets/bg.jpg" alt="bg" />
+			<div class="absolute left-0 px-6 md:px-12 z-20">
+        <p class="flex gap-1 text-white text-md md:text-2xl font-semibold">Halo<a id="namaewa" class="font-bold text-[#8B94B1]">People</a> , Selamat Datang Di Codevity!</p>
+				<p class="text-white text-xs md:text-2xl font-normal max-w-[36rem]">Kami adalah Mitra Solusi Digital Anda</p>
+			</div>
+		</section>
+		<section id="tentang" class="flex flex-col md:flex-row p-6 md:p-18 justify-center bg-[#0D1117]">
+      <div class="md:flex md:max-w-1/2">
+				<div class="flex flex-col bg-[#161B22] text-[#E5E0FF] mx-auto p-4 md:rounded-l-2xl md:rounded-none rounded-t-2xl justify-center">
+          <p class="text-md md:text-2xl font-bold">Tentang Kami</p>
+					<p class="text-sm md:text-md font-medium">
+            Codevity adalah penyedia layanan teknologi dan pengembangan digital yang berfokus pada solusi kreatif, efisien, dan scalable. Kami membantu bisnis, startup, dan individu dalam membangun website, sistem berbasis web, hingga automasi teknologi dengan pendekatan modern dan hasil yang profesional.
+					</p>
+				</div>
+			</div>
+			<div class="flex flex-col text-[#161B22]">
+        <div class="flex flex-col justify-between max-w-prose bg-[#8B94B1] p-4 md:rounded-tr-2xl">
+          <p class="text-sm md:text-xl font-bold">Visi</p>
+					<p class="text-sm md:text-xl font-medium">Menjadi mitra teknologi terpercaya bagi bisnis di seluruh dunia melalui solusi digital yang inovatif, efisien, dan berdampak nyata.</p>
+				</div>
+				<span class="before:content[' '] bg-[#161B22] py-1 hidden md:block"></span>
+				<div class="flex flex-col max-w-prose bg-[#8B94B1] p-4 rounded-b-2xl md:rounded-none md:rounded-br-2xl">
+          <p class="text-sm md:text-xl font-bold">Misi</p>
+					<p class="text-sm md:text-xl font-medium">Mengembangkan produk digital yang fungsional dan mudah digunakan, memberikan solusi teknologi yang relevan dan dapat berkembang seiring kebutuhan, serta membangun hubungan jangka panjang dengan klien melalui komunikasi yang terbuka dan hasil kerja yang solid. Kami juga berkomitmen untuk terus mendorong pertumbuhan tim melalui budaya kolaborasi dan pembelajaran yang berkelanjutan.</p>
+				</div>
+			</div>
+		</section>
+
+    <section id="portofolio" class="flex flex-col gap-6 p-6 md:p-16 bg-[#0D1117] text-[#E5E0FF]">
+      <p class="text-2xl font-bold text-center">Portofolio</p>
+      <div class="flex flex-col md:flex-row gap-6">
+      <div class="flex flex-col bg-[#161B22] rounded-xl drop-shadow-[0_0_6px_rgba(0,0,0,0.15)] drop-shadow-[#7286D3]/40 hover:drop-shadow-[#7286D3]/80 hover:scale-101 transition-all duration-300 md:max-w-1/3">
+        <img class="object-cover object-center md:max-h-1/2 rounded-t-xl" src="/assets/one.jpg" alt="Item 1">
+        <div class="p-6">
+          <p class="text-xl font-bold">Retail Dashboard</p>
+          <p class="text-md font-normal">Dashboard admin interaktif untuk memantau stok, transaksi, dan performa toko retail secara menyeluruh. Fokus pada UI/UX yang simpel dan responsif.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col bg-[#161B22] rounded-xl drop-shadow-[0_0_6px_rgba(0,0,0,0.15)] drop-shadow-[#7286D3]/40 hover:drop-shadow-[#7286D3]/80 hover:scale-101 transition-all duration-300 md:-w-1/3">
+        <img class="object-cover object-center max-h-1/2 rounded-t-xl" src="/assets/apimage.jpg" alt="Item 2">
+        <div class="p-6">
+          <p class="text-xl font-bold">API Management Tools</p>
+          <p class="text-md font-normal">Sistem manajemen API internal yang membantu tim mengatur endpoint, autentikasi, dan dokumentasi dengan mudah. Dibuat dengan RESTful pattern & MongoDB backend.</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col bg-[#161B22] rounded-xl drop-shadow-[0_0_6px_rgba(0,0,0,0.15)] drop-shadow-[#7286D3]/40 hover:drop-shadow-[#7286D3]/80 hover:scale-101 transition-all duration-300 md:max-w-1/3">
+        <img class="object-cover object-center max-h-1/2 rounded-t-xl" src="/assets/trhee.jpg" alt="Item 3">
+        <div class="p-6">
+          <p class="text-xl font-bold">Kasir Modern</p>
+          <p class="text-md font-normal">Aplikasi kasir berbasis web dengan fitur pemindaian barcode, cetak struk otomatis, dan analisis penjualan real-time. Dibangun dengan Next.js dan Tailwind untuk performa maksimal.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+		<section id="kontak" class="bg-[#0D1117] py-6 px-8 md:px-16">
+      <p class="text-[#E5E0FF] mb-3 text-xl md:text-2xl font-bold text-center">Kontak Kami</p>
+      <div class="bg-[#161B22] rounded-2xl w-full flex flex-col md:flex-row justify-between gap-6 py-12 px-6 md:px-32">
+      <div class="flex flex-col text-center md:text-left md:flex-row gap-2 md:w-1/2">
+        <div class="flex flex-col gap-3">
+          <div>
+            <p class="font-bold text-[#E5E0FF] text-sm">Nama</p>
+						<input class="bg-[#0D1117] w-full rounded-md outline-[#8B94B1] outline-1 p-1 text-[#E5E0FF] font-medium" type="text" name="nama"
+            id="nama" placeholder="Nama Anda.." onchange="checkForm()" required />
+					</div>
+					<div>
+            <p class="font-bold text-[#E5E0FF] text-sm">Tanggal Lahir</p>
+						<input id="tanggalhir" class="bg-[#0D1117] w-full rounded-md outline-[#8B94B1] outline-1 p-1 text-[#E5E0FF] font-medium" type="date"
+            name="Tanggal Lahir" onchange="checkForm()" required />
+					</div>
+					<div class="mx-auto">
+            <p class="font-bold text-[#E5E0FF] text-sm">Jenis Kelamin</p>
+						<div class="relative flex bg-[#0D1117] items-center text-md p-1 justify-between gap-1 rounded-full">
+              <input name="gender" id="maleGender" value="Laki-Laki" class="sr-only peer/male" type="radio" checked required/>
+							<label for="maleGender" class="text-[#E5E0FF] px-1 peer-checked/male:bg-[#7286D3] peer-checked/male:text-[#0D1117] rounded-full p-1 transition-all duration-200 cursor-pointer z-10">Laki-Laki</label>
+							
+              <input name="gender" id="femaleGender" value="Perempuan" class="sr-only peer/female" type="radio" required/>
+							<label for="femaleGender" class="text-[#E5E0FF] px-1 peer-checked/female:bg-[#7286D3] peer-checked/female:text-[#0D1117] rounded-full p-1 transition-all duration-200 cursor-pointer">Perempuan</label>
+						</div>
+					</div>
+				</div>
+				<div class="flex flex-col gap-2">
+          <div>
+            <p class="font-bold text-[#E5E0FF] text-sm">Pesan</p>
+						<textarea class="bg-[#0D1117] w-full min-h-28 max-h-28 rounded-md outline-[#8B94B1] outline-1 p-1 text-[#E5E0FF] font-medium" name="pesan"
+            id="pesan" placeholder="Pesan Anda.." onchange="checkForm()"></textarea>
+					</div>
+					<button class="bg-[#0D1117] text-[#E5E0FF] p-2 rounded-md outline-1 outline-[#8B94B1] hover:outline-[#7286D3] hover:bg-[#7286D3]   active:scale-90 cursor-pointer transition-all duration-300" onclick="sendForm()">Kirim Pesan</button>
+				</div>
+			</div>
+			<div class="bg-[#0D1117] gap-3 md:w-1/2 overflow-y-scroll max-h-42 rounded-md outline-[#8B94B1] outline-1 p-3 text-[#E5E0FF]">
+        <p class="font-bold">Sender Response</p>
+				<div class="grid grid-cols-[120px_1fr] gap-y-1 text-sm font-normal transition-all duration-300">
+          <p class="text-left">Waktu</p>
+					<p id="waktuSender">: 06:32 - 17 July 2025</p>
+					<p class="text-left">Nama</p>
+					<p id="namaSender">: Nama Saya..</p>
+					<p class="text-left">Tanggal Lahir</p>
+					<p id="lahirSender">: 16 July 2025</p>
+					<p class="text-left">Jenis Kelamin</p>
+					<p id="genderSender">: Laki-laki</p>
+					<p class="text-left">Pesan</p>
+					<p id="pesanSender">: Mantap Bang</p>
+				</div>
+			</div>
+		</div>
+		</section>
+		<div class="bg-[#0D1117] text-[#E5E0FF] flex flex-col justify-center items-center py-6">
+      <p class="text-sm">Mini Project</p>
+      <p class="text-sm">Dibuat Oleh <a class="font-bold" href="https://admryn.vercel.app/">AdamRoyn</a></p>
+		</div>
+    <script src="/js/script.js"></script>
+	</body>
+  </html>
